@@ -1,0 +1,24 @@
+
+pytest
+
+虚拟环境：
+python -m venv venv
+激活：
+.\venv\Scripts\activate
+退出虚拟环境：
+deactivate
+
+安装命令：
+pip install -r requirements.txt
+
+
+res = requests.get(url, params=None)  
+print(res.text)  返回文本信息
+print(res.json())   返回json格式信息
+print(res.content)  字节内容
+print(res.status_code)  状态吗
+print(res.reason)  状态信息
+print(res.cookies)  返回的cookie
+print(res.encoding)  返回编码格式
+print(res.headers)  返回请求头
+print(res.request.{''}) 返回请求数据 
