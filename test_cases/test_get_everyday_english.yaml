@@ -1,0 +1,33 @@
+-
+  feature: 模块   #注释不会被读取
+  story: 接口
+  title: 测试每日一句经典英语范句
+  request:
+    method: post
+    url: http://apis.juhe.cn/fapigx/everyday/query
+    data: 
+      key: 4349c53c89f11a98fd7b8071491ba20c
+    headers: 
+      Content-Type: application/x-www-form-urlencoded
+  # validate:
+  #   - assert result.get('reason') == 'success', '返回数据存在异常，打印原数据：{result}'
+  #   - assert "result" in result, '返回数据中缺少result字段，打印原数据：{result}'
+  #   - assert result['result'].get('content', '') and result['result'].get('note', ''), '内容或注释缺失，返回数据：{result}'
+
+-
+  feature: 模块2   #注释不会被读取
+  story: 接口
+  title: 验证错误的key
+  request:
+    method: post
+    url: http://apis.juhe.cn/fapigx/everyday/query
+    data: 
+      key: 4349c53c89f11a97fd7b8071491ba20c
+    headers: 
+      Content-Type: application/x-www-form-urlencoded
+  # validate:
+  #   - assert result.get('reason') == 'success', '返回数据存在异常，打印原数据：{result}'
+  #   - assert "result" in result, '返回数据中缺少result字段，打印原数据：{result}'
+  #   - assert result['result'].get('content', '') and result['result'].get('note', ''), '内容或注释缺失，返回数据：{result}'
+
+

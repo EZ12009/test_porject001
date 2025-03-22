@@ -1,0 +1,17 @@
+/*
+.side-nav__brand {
+  background: url('custom-logo.svg') no-repeat left center !important;
+  margin-left: 10px;
+}
+*/
+.side-nav__brand {
+  background: url('log.jpg') no-repeat center center !important; /* 背景图居中 */
+  margin: 0 auto; /* 确保整个元素居中 */
+  height: 90px;
+  background-size: contain !important;
+  width: 100%; /* 确保元素宽度充满父容器 */
+}
+
+.side-nav__brand-text {
+  display: none;
+}

@@ -1,0 +1,9 @@
+-
+  feature: 模块   #注释不会被读取
+  story: 接口
+  title: 随机kfc搞笑语录
+  request:
+    method: get
+    url: http://shanhe.kim/api/za/time.php
+    params: 
+      local_value: local_value
